@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.30.128:3306/java_everything
+    username: zhanghj
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# auto参数的作用主要用于：自动创建、更新、验证数据库表结构，有四个值,最常用的是update
+# update如果没有表会创建，如果没有则会校验，不会删除数据
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: false
+    show-sql: true

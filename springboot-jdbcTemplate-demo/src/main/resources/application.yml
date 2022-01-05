@@ -1,0 +1,9 @@
+# 使用jdbcTemplate，必须引入spring-boot-starter-jdbc包，如果引入了却没有配置springboot，
+# 那启动会报错，或者不用这个包，不使用jdbcTemplate，自己写个JDBCUtil，这样也行
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.30.128:3306/java_everything
+    username: zhanghj
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
